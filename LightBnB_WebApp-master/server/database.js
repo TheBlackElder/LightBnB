@@ -260,7 +260,7 @@ const addProperty = function(property) {
       number_of_bathrooms,
       number_of_bedrooms
     )
-    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10. $11, $12, $13, $14) RETURNING *;
+    VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING *;
  `, [property.owner_id,
       property.title,
       property.description,
@@ -286,6 +286,4 @@ const addProperty = function(property) {
 
 
 exports.addProperty = addProperty;
-
-
 
